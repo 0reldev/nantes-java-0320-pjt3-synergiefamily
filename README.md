@@ -9,8 +9,8 @@
 [Synergie Family](https://www.synergiefamily.com/) is a company based on Marseille. 
 They are specialized in the development of socio-educational actions to the advantage of childhood, youth and family.
 With this in mind, they often need to contact activity leaders for organizing events. 
-The use of a database naturally comes and a web application is needed for the company to manage this activity leader database.
-Such a project was a good opportunity for Wilders students to practise their new skills in web development.
+The use of a database naturally comes and a web application is needed for the company to manage it.
+Such a project was a good opportunity for students from Wild Code School to practise their new skills in web development.
 
 
 #### Work Context
@@ -32,7 +32,7 @@ Due to the lockdown, this project has been led in **full-remote**.
 - **Log-in**: users can log-in to access the web app
 - **Password edition**: a user can edit his password
 - **user management**: as an administrator, a user can create, edit, and delete other user accounts.
-- **activity-leader creation**: a user can enter a new activity leader in the database. An automatic e-mail is sent to him asking his to fill 
+- **activity-leader creation**: a user can create a new activity leader in the database. An automatic e-mail is sent to him asking his to fill 
 its informations in the database.
 - **activity leader form completion**: an activity leader can access its form (without being loged) to fill its informations in the database
 - **activity leader collective mailing**: a user can select a group of activity leaders in the database and send a single mail to all of them
@@ -60,7 +60,7 @@ the app initialization. Once this is done, there is one unique administrator whi
 
 #### Home Page
 
-The web site is protected by **Spring Security**. To enter the app, a user needs to have an account. If he doesn't own one, an administration will have to create
+The web site is protected by **Spring Security**. To enter the app, a user needs to have an account. If he doesn't own one, an administrator will have to create
 a one for him with his email address.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-1.png)
@@ -71,14 +71,14 @@ including the creation of user account. Coordinators can't access the user manag
 
 #### Profile/Password edition
 
-Once that a user in logged-in, the "Profil" page is return. Is the page, a user can edit its password if he wants.
+Once that a user in logged-in, the "Profil" page is returned. Is this page, a user can edit its password if he wants.
 
-In the form, it is asked to confirm the the new password. It the second password mismatches the first one, the form displays a message asking the user to type its
-new password again and the fomr colour becomes red. 
+In the form, it is asked to confirm the new password. If the second password mismatches the first one, the form displays a message asking the user to type its
+new password again and the field colour becomes red. 
 
-If the two passwords matches, the user can save it by clicking the 'ENREGISTRER' button.
+If the two passwords match, the user can save it by clicking the 'ENREGISTRER' button.
 
-It's well worth noting that **passwords are encrypted** with an encrypting method. Therefore, if the database is hacked, hackers won't have access to the users' password.
+It's well worth noting that **passwords are encrypted** with an encrypting Java method. Therefore, passwords cannot be read in the database.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-2.png)
 
@@ -87,7 +87,7 @@ It's well worth noting that **passwords are encrypted** with an encrypting metho
 
 Only `ADMIN` users can access this page!
 
-This page shows all the current users able to access the website - their email/usernam and their current role.
+This page shows all the current users able to access the website - their email/username and their current role.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-2.png)
 
@@ -101,11 +101,11 @@ Coordinators can't access the *Utilisateurs* page.
 ##### User addition
 
 Administrators can create other users by clicking the *AJOUTER UN UTILISATEUR* button.
-A new form is displayed, asking the email address of the new user a what role would he get: `ADMIN` or `COORDINATEUR`
+A new form is displayed, asking the email address of the new user a what role would he get: `ADMIN` or `COORDINATEUR`.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-3.png)
 
-After the validation, an automatic email is generated and sent to the new user. This mails contained an **automatical temporary password** randmoly
+After the validation, an automatic email is generated and sent to the new user. This mails contained an **automatical temporary password** randomly
 generated, composed by a random combination of random characters (letters, figures and symbols). 
 
 The user then has to connect to this account whit this temporary password and change it in his profile page. 
@@ -113,21 +113,22 @@ The user then has to connect to this account whit this temporary password and ch
 
 ##### User edition
 
-Administrator can change the role of a user profile. I can click on the pen icon. A new form is returned:
+Administrator can change the role of a user profile. He can click on the pen icon. A new form is returned:
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-5.png)
 
-Once that the new role is selected, he can save it by clicking on ENREGISTRER.
+Once that the new role is selected, he can save it by clicking on **ENREGISTRER**.
 
 
 ##### User deletion
 
-Administrator can also delete an account. For this, he just has to click the trash bin icon. A popup message appears asking the confirmation: 
+An administrator can also delete an account. For this, he just has to click the trash bin icon. A popup message appears asking the confirmation: 
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-6.png)
+
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-7.png)
 
-A user cannot delete its own account, the trash bin icon doesn't appear for its line.
+A user cannot delete its own account, the trash bin icon doesn't appear for its own line.
 
 In fact, this deletion option doesn't totally erase the account from the database, but it just disable it. If for a reason the account needs to be recovered,
 this would still be possible in the database.
@@ -135,9 +136,9 @@ this would still be possible in the database.
 
 #### Activity leaders management
 
-This page displays a list of all activity leaders (the actives ones (those who haven't been deleted)) from the database.
+This page displays a list of all activity leaders (the active ones (those who haven't been deleted)) from the database.
 
-The **Actif** field shows if the activit leader is under contract or not on today's date.
+The **Actif** field shows if the activity leader is under contract or not on today's date.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-8.png)
 
@@ -150,7 +151,7 @@ Clicking on **AJOUTER UN ANIMATEUR** return the creation form for adding a new a
 
 The user needs to fill all the mandatory fields: the name, the surname, the email address, and click on **ENREGISTRER** to validate it. 
 
-From here, a *automatic mail is generated* and sent to the activity leaders, giving to him a link to access this form.
+From here, a **automatic mail is generated** and sent to the activity leaders, giving to him a link to access this form.
 This link contains a **token** wich is randomly generated, for security reasons. Only the activity leader can fill its own form from the given link to its email.
 
 
@@ -158,7 +159,7 @@ This link contains a **token** wich is randomly generated, for security reasons.
 
 User can edit the informations concerning an activity leader by clicking on the pen icon.
 
-Let's explore the fields present in such  a form:
+Let's explore the fields present in such a form:
 - first name
 - surname
 - birth date
@@ -189,7 +190,7 @@ All the date datas are selected with a **datepicker JavaScript function**:
 ###### Diplomas, audiences and values
 
 `Diploma` and `Value` are both entities having a many-to-many connexion with the `activityLeader` entity. A finite list of diplomas and values
-are present in the database, and the activity leader can select one or more element from the list.
+are present in the database, and the activity leader can select one or more elements from the list.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-11.png)
 
@@ -201,7 +202,7 @@ are present in the database, and the activity leader can select one or more elem
 ###### Skills
 
 `Skill` also is coded as an entity in Hibernate, having a many-to-many connexion with the `activityLeader` one. However, here in the form, the user
-can type several skills, seperated by a comma ',', and those skills will automatically be added in the `skillList`, which is different from the values
+can type several skills, seperated by a comma `,`, and those skills will automatically be added in the `skillList`, which is different from the values
 and diplomas.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-14.png)
@@ -210,10 +211,10 @@ and diplomas.
 ###### Unavailabilites
 
 Unavailabilities are time periods when the activity leader isn't avaibable and cannot be called for a contract. Several time periods can be saved.
-Each time a new time period must be added to the list of unavailabilites, a starting date and an end date must be selected, it is required to save the 
-full form by clicking on **ENREGISTRER**. The time period then appaers in the liste, and another on can be added following the same procedure.
+Each time a new time period must be added to the list of unavailabilities, a starting date and an end date must be selected, it is required to save the 
+full form by clicking on **ENREGISTRER**. The time period then appears in the list, and another one can be added with the same procedure.
 
-The list of unavailabilies is diplayed, and it can be deleted with the SUPPRIMER CETTE INDISPONIBILITÉ option.
+The list of unavailabilities is diplayed, and it can be deleted with the **SUPPRIMER CETTE INDISPONIBILITÉ** option.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-15.png)
 
@@ -234,17 +235,17 @@ fields.
 
 ##### Collective mailing
 
-The list of activity leader has checkboxes. A collective mailing function allows to write a single message and to send it to all the checked activity leaders. 
-After a selection, a click on the *ENVOYER UN MESSAGE* button return a popup with a message form. A subject and a message can be written. The **ENVOYER**
-button will send this message to the selected group. The **ANNULER** button cancel the message.
+The list of activity leadesr has checkboxes. A collective mailing function allows to write a single message and to send it to all the checked activity leaders. 
+After a selection, a click on the **ENVOYER UN MESSAGE** button returns a popup with a message form. A subject and a message can be written. The **ENVOYER**
+button will send this message to the selected group. The **ANNULER** button cancels the message.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-17.png)
 
 
 ##### Activity leader deletion
 
-The trash bin icon deletes the corresponding activity leader. Such as a user deletion, popup messages appear to confirm the actual deletion, and 
-this is not a reel deletion form the database but only a disabling. Disabled activity leaders won't appear again from the research queries, but
+The trash bin icon deletes the corresponding activity leader. Such as a user deletion, pop-up messages appear to confirm the actual deletion, and 
+this is not a reel deletion form the database but only a disabling. Disabled activity leaders won't appear anymore from the research queries, but
 they still exist in the database.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-18.png)
@@ -259,14 +260,14 @@ The **Recherches** tab return a complete form for making researches of activity 
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-20.png)
 
-Results are presented with cards. Each card display a summary of main informations when they exist. Here is an example of a reaserch based on the name "Jean":
+Results are presented with cards. Each card display a summary of main informations when they exist. Here is an example of a research based on the name "Jean":
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-21.png)
 
 
 ##### Form consultation
 
-Clicking on the **VOIR LA FICHE** button return the full form page, but in **read-only mode**. Informations cannot be edited from here, avery field in the form 
+Clicking on the **VOIR LA FICHE** button return the full form page, but in **read-only mode**. Informations cannot be edited from here, every field in the form 
 is grey.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-21.png)
@@ -274,12 +275,12 @@ is grey.
 
 ##### Form consultation
 
-Each card from the research result has a chec box in the upright corner. The card can be selected in order to send a collective email to the selected group.
-Once that people are selected, the **ENVOYER UN EMAIL** button opens a message pop-up. 
+Each card from the research result has a check box in the upright corner. The card can be selected in order to send a collective email to the selected group.
+Once that people are selected, the **ENVOYER UN EMAIL** button popped up a message box. 
 
 **ENVOYER** sends the message to the selected group, **ANNULER** aborts and closes the window.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-21.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-22.png)
 
 
 #### Log-out
