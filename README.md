@@ -89,7 +89,7 @@ Only `ADMIN` users can access this page!
 
 This page shows all the current users able to access the website - their email/username and their current role.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-2.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-3.png)
 
 ##### Example with a `COORDINATEUR` user
 
