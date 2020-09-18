@@ -270,17 +270,17 @@ Results are presented with cards. Each card display a summary of main informatio
 Clicking on the **VOIR LA FICHE** button return the full form page, but in **read-only mode**. Informations cannot be edited from here, every field in the form 
 is grey.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-21.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-22.png)
 
 
-##### Form consultation
+##### Collective mailing
 
 Each card from the research result has a check box in the upright corner. The card can be selected in order to send a collective email to the selected group.
 Once that people are selected, the **ENVOYER UN EMAIL** button popped up a message box. 
 
 **ENVOYER** sends the message to the selected group, **ANNULER** aborts and closes the window.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-22.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-23.png)
 
 
 #### Log-out
