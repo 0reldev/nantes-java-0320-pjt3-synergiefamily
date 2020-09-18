@@ -63,7 +63,7 @@ the app initialization. Once this is done, there is one unique administrator whi
 The web site is protected by **Spring Security**. To enter the app, a user needs to have an account. If he doesn't own one, an administration will have to create
 a one for him with his email address.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-1.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-1.png)
 
 There are two different defined roles in Spring Security configuration: `ADMIN` and `COORDINATEUR`. The administrators can access all the pages of the website, 
 including the creation of user account. Coordinators can't access the user management page.
@@ -80,7 +80,7 @@ If the two passwords matches, the user can save it by clicking the 'ENREGISTRER'
 
 It's well worth noting that **passwords are encrypted** with an encrypting method. Therefore, if the database is hacked, hackers won't have access to the users' password.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-2.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-2.png)
 
 
 #### User management (for administrators only)
@@ -89,13 +89,13 @@ Only `ADMIN` users can access this page!
 
 This page shows all the current users able to access the website - their email/usernam and their current role.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-2.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-2.png)
 
 ##### Example with a `COORDINATEUR` user
 
 Coordinators can't access the *Utilisateurs* page.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-4.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-4.png)
 
 
 ##### User addition
@@ -103,7 +103,7 @@ Coordinators can't access the *Utilisateurs* page.
 Administrators can create other users by clicking the *AJOUTER UN UTILISATEUR* button.
 A new form is displayed, asking the email address of the new user a what role would he get: `ADMIN` or `COORDINATEUR`
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-3.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-3.png)
 
 After the validation, an automatic email is generated and sent to the new user. This mails contained an **automatical temporary password** randmoly
 generated, composed by a random combination of random characters (letters, figures and symbols). 
@@ -115,7 +115,7 @@ The user then has to connect to this account whit this temporary password and ch
 
 Administrator can change the role of a user profile. I can click on the pen icon. A new form is returned:
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-5.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-5.png)
 
 Once that the new role is selected, he can save it by clicking on ENREGISTRER.
 
@@ -124,8 +124,8 @@ Once that the new role is selected, he can save it by clicking on ENREGISTRER.
 
 Administrator can also delete an account. For this, he just has to click the trash bin icon. A popup message appears asking the confirmation: 
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-6.png)
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-7.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-6.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-7.png)
 
 A user cannot delete its own account, the trash bin icon doesn't appear for its line.
 
@@ -139,14 +139,14 @@ This page displays a list of all activity leaders (the actives ones (those who h
 
 The **Actif** field shows if the activit leader is under contract or not on today's date.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-8.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-8.png)
 
 
 ##### Activity leader creation
 
 Clicking on **AJOUTER UN ANIMATEUR** return the creation form for adding a new activity leader.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-9.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-9.png)
 
 The user needs to fill all the mandatory fields: the name, the surname, the email address, and click on **ENREGISTRER** to validate it. 
 
@@ -183,7 +183,7 @@ Let's explore the fields present in such  a form:
 
 All the date datas are selected with a **datepicker JavaScript function**:
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-10.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-10.png)
 
 
 ###### Diplomas, audiences and values
@@ -191,11 +191,11 @@ All the date datas are selected with a **datepicker JavaScript function**:
 `Diploma` and `Value` are both entities having a many-to-many connexion with the `activityLeader` entity. A finite list of diplomas and values
 are present in the database, and the activity leader can select one or more element from the list.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-11.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-11.png)
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-12.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-12.png)
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-13.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-13.png)
 
 
 ###### Skills
@@ -204,7 +204,7 @@ are present in the database, and the activity leader can select one or more elem
 can type several skills, seperated by a comma ',', and those skills will automatically be added in the `skillList`, which is different from the values
 and diplomas.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-14.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-14.png)
 
 
 ###### Unavailabilites
@@ -215,7 +215,7 @@ full form by clicking on **ENREGISTRER**. The time period then appaers in the li
 
 The list of unavailabilies is diplayed, and it can be deleted with the SUPPRIMER CETTE INDISPONIBILITÉ option.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-15.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-15.png)
 
 
 ###### Send the edited form to the activity leader
@@ -229,7 +229,7 @@ exactly like at the form creation.
 A research bar allows the user to look for a specific activity leader. This is a simple searching function searching the typed text in the name and surname
 fields.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-16.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-16.png)
 
 
 ##### Collective mailing
@@ -238,7 +238,7 @@ The list of activity leader has checkboxes. A collective mailing function allows
 After a selection, a click on the *ENVOYER UN MESSAGE* button return a popup with a message form. A subject and a message can be written. The **ENVOYER**
 button will send this message to the selected group. The **ANNULER** button cancel the message.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-17.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-17.png)
 
 
 ##### Activity leader deletion
@@ -247,9 +247,9 @@ The trash bin icon deletes the corresponding activity leader. Such as a user del
 this is not a reel deletion form the database but only a disabling. Disabled activity leaders won't appear again from the research queries, but
 they still exist in the database.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-18.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-18.png)
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-19.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-19.png)
 
 
 
@@ -257,11 +257,11 @@ they still exist in the database.
 
 The **Recherches** tab return a complete form for making researches of activity leaders on specific criteria.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-20.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-20.png)
 
 Results are presented with cards. Each card display a summary of main informations when they exist. Here is an example of a reaserch based on the name "Jean":
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-21.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-21.png)
 
 
 ##### Form consultation
@@ -269,7 +269,7 @@ Results are presented with cards. Each card display a summary of main informatio
 Clicking on the **VOIR LA FICHE** button return the full form page, but in **read-only mode**. Informations cannot be edited from here, avery field in the form 
 is grey.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-21.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-21.png)
 
 
 ##### Form consultation
@@ -279,7 +279,7 @@ Once that people are selected, the **ENVOYER UN EMAIL** button opens a message p
 
 **ENVOYER** sends the message to the selected group, **ANNULER** aborts and closes the window.
 
-![screen capture](https://github.com/0reldev/synergie-family/blob/dev/screen-captures/screen-capture-21.png)
+![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-21.png)
 
 
 #### Log-out
