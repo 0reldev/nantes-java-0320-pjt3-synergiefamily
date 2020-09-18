@@ -93,14 +93,14 @@ This page shows all the current users able to access the website - their email/u
 
 ##### Example with a `COORDINATEUR` user
 
-Coordinators can't access the *Utilisateurs* page.
+Coordinators can't access the **Utilisateurs** page.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-4.png)
 
 
 ##### User addition
 
-Administrators can create other users by clicking the *AJOUTER UN UTILISATEUR* button.
+Administrators can create other users by clicking the **AJOUTER UN UTILISATEUR** button.
 A new form is displayed, asking the email address of the new user a what role would he get: `ADMIN` or `COORDINATEUR`.
 
 ![screen capture](https://github.com/0reldev/synergie-family/blob/dev/sc/screen-capture-3.png)
