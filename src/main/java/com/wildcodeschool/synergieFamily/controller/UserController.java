@@ -39,6 +39,29 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
+    @GetMapping("/init")
+    @ResponseBody
+    public String init() {
+        if (!roleRepository.findByName("ROLE_COORDINATEUR").isPresent()) {
+            roleRepository.save(new Role("ROLE_COORDINATEUR"));
+        }
+        if (!roleRepository.findByName("ROLE_ADMIN").isPresent()) {
+            roleRepository.save(new Role("ROLE_ADMIN"));
+        }
+
+        Optional<Role> optionalRole =roleRepository.findByName("ROLE_ADMIN");
+        User user = new User("init@gmail.com", passwordEncoder.encode("init"));
+        if (optionalRole.isPresent()) {
+            user.getRoles().add(optionalRole.get());
+        }
+
+        userRepository.save(user);
+        return "ok";
+    }
+
+
+
     @GetMapping(value = "/logout")
     public String logoutPage(HttpServletRequest request, HttpServletResponse response) {
 
