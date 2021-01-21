@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body >
 <header th:fragment="nav-bar">
-    <ul id="slide-out" class="side-nav fixed">
+
+
+
+    <ul id="slide-out" class="side-nav fixed hide-on-med-and-down">
         <img src="/image/logo-synergie.png">
         <div class="bloc-li">
             <li><a href="/profile"><i class="small material-icons">account_circle</i>Profil</a></li>
@@ -21,8 +24,72 @@
             <li><a href="/logout"><i class="small material-icons">power_settings_new</i>Déconnexion</a></li>
         </div>
     </ul>
+
+
+    <a class="btn-floating btn-large waves-effect waves-light sidenav-trigger left hide-on-large-only" data-target="menu-responsive">
+        <i class="material-icons">menu</i>
+    </a>
+
+
+<!--    <div class="navbar-fixed">-->
+<!--        <nav class="nav-extended">-->
+<!--            <div class="container">-->
+<!--                <div class="nav-wrapper">-->
+<!--                    <ul class="right hide-on-med-and-down">-->
+<!--                        <li><a href="/profile"><i class="small material-icons">account_circle</i>Profil</a></li>&ndash;&gt;-->
+<!--                        <li sec:authorize="hasRole('ROLE_ADMIN')"><a href="/user-management"><i class="small material-icons">settings_applications</i>Utilisateurs</a></li>-->
+<!--                        <li><a href="/activity-leader-management"><i class="small material-icons">contacts</i>Animateurs</a></li>-->
+<!--                        <li><a href="/filter"><i class="small material-icons">find_in_page</i>Recherches</a></li>-->
+<!--                        <li><a href="/logout"><i class="small material-icons">power_settings_new</i>Déconnexion</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </nav>-->
+<!--    </div>-->
+
+    <ul class="sidenav" id="menu-responsive">
+        <img src="/image/logo-synergie.png" alt="" class="circle responsive-img">
+        <li>
+            <a href="/profile">
+                Profil
+                <i class="material-icons">account_circle</i>
+            </a>
+        </li>
+        <li sec:authorize="hasRole('ROLE_ADMIN')">
+            <a href="/user-management">
+                <i class="small material-icons">settings_applications</i>
+                Utilisateurs
+            </a>
+        </li>
+        <li>
+            <a href="/activity-leader-management">
+                <i class="small material-icons">contacts</i>Animateurs
+            </a>
+        </li>
+        <li>
+            <a href="/filter">
+                <i class="small material-icons">find_in_page</i>Recherches</a>
+        </li>
+        <li>
+            <a href="/logout">
+            <i class="small material-icons">power_settings_new</i>Déconnexion</a>
+        </li>
+        <br>
+        <li>
+            <a class="sidenav-close" href="#!">
+                fermer
+                <i class="material-icons">close</i>
+            </a>
+        </li>
+    </ul>
 </header>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        M.AutoInit();
+    });
+</script>
 </body>
 </html>
