@@ -9,39 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<header>
-</header>
-<body class="container">
-    <div class="center-align">
-        <div class="logoSynergie">
-            <img src="/image/logo-synergie.png" alt="logo synergie family">
-        </div>
-        <div id="connexion" class="row">
-            <div class="card2" id="car2">
-                <div class="card white" id="card">
-                    <div class="card-content black-text">
-                        <h5 class="connexion">CONNEXION</h5>
-                        <div class="row">
-                            <form class="col s12" th:action="@{/login}" method="post">
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <div th:if="${param.error}" class="alert alert-error">
-                                            Email et mot de passe invalide
-                                        </div>
-                                        <div th:if="${param.logout}" class="alert alert-success">
-                                            You have been logged out.
-                                        </div>
-                                        <input id="email" type="email" class="validate" placeholder="Email" name="username"/>
-                                        <input id="password" type="password" class="validate" placeholder="Mot de passe" name="password"/>
-                                    </div>
-                                </div>
-                                <div class="button-form">
-                                    <button type="submit" class="btn">Se connecter<i class="material-icons right">done</i></button>
-                                </div>
-                            </form>
+<body class="login center-align">
+    <img class="login__company-logo" src="/image/logo-synergie.png" alt="logo synergie family">
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <div class="login__connexion-card card white" >
+                <h5>CONNEXION</h5>
+                <form th:action="@{/login}" method="post">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <div th:if="${param.error}" class="alert alert-error">
+                                Email et mot de passe invalide
+                            </div>
+                            <div th:if="${param.logout}" class="alert alert-success">
+                                You have been logged out.
+                            </div>
+                            <input id="email" type="email" class="validate" placeholder="Email" name="username"/>
+                            <input id="password" type="password" class="validate" placeholder="Mot de passe" name="password"/>
                         </div>
                     </div>
-                </div>
+                    <div class="button-form">
+                        <button type="submit" class="btn">Se connecter<i class="material-icons right">done</i></button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

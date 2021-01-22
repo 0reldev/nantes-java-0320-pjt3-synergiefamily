@@ -1,70 +1,13 @@
-/*PAGE HOME 1*/
-h2 {
-    font-size: 3rem;
-}
-.container {
-    background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* generic importations */
+@import "typography.css";
 
-.text-align {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60rem;
-}
-.logoSynergie img {
-    width: 18rem;
-    height: 10rem;
-}
+/* pages styles importations */
+@import "login-style.css";
+@import "profile-style.css";
+@import "filter-style.css";
 
-.connexion {
-    font-family: 'Ubuntu',sans-serif;
-    font-weight: bold;
-}
 
-#connexion {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
 
-#card2 {
-    margin: 0rem;
-}
-.center-align {
-    margin-top: 4rem;
-}
-
-/*PAGE PROFIL 2*/
-#button-form-user-modification {
-    text-align: end;
-}
-.profileContent {
-    margin-left: 1rem;
-}
-#row-profil {
-    margin-top: 3rem;
-}
-
-@media only screen and (min-width: 768px) {
-
-    .profileContent {
-        /*margin-left: 5rem;*/
-        /*margin-right: 10rem;*/
-        /*margin-top: 8rem;*/
-        width: 100%;
-    }
-
-    .saveButton {
-        text-align: right;
-    }
-
-}
 
 /* USER MANAGEMENT PAGE */
 
@@ -240,8 +183,14 @@ a i {
     background-color: #f7f7f7;
 }
 header {
-    width: 13rem;
+    width: 19rem;
 }
+@media (max-width: 992px) {
+    header {
+        width: 1rem;
+    }
+}
+
 header img {
     width: 8rem;
     height: 6rem;
@@ -290,9 +239,9 @@ header ul {
     .side-nav {
         background-color: #f7f7f7;
     }
-    header {
-        width: 19rem;
-    }
+    /*header {*/
+    /*    width: 19rem;*/
+    /*}*/
     header img {
         width: 15rem;
         height: 10rem;

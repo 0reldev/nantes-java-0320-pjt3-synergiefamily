@@ -1,0 +1,24 @@
+#button-form-user-modification {
+    text-align: end;
+}
+.profileContent {
+    margin-left: 1rem;
+}
+#row-profil {
+    margin-top: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .profileContent {
+        /*margin-left: 5rem;*/
+        /*margin-right: 10rem;*/
+        /*margin-top: 8rem;*/
+        width: 100%;
+    }
+
+    .saveButton {
+        text-align: right;
+    }
+
+}

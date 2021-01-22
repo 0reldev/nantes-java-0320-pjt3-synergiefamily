@@ -1,0 +1,22 @@
+.login {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.login__company-logo {
+    width: 18rem;
+    height: 10rem;
+}
+
+.login__connexion-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 2rem;
+}
