@@ -1,11 +1,10 @@
 .login {
-    background-color: #f7f7f7;
+    background-color: var(--grey-background);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 .login__company-logo {

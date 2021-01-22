@@ -1,24 +1,23 @@
-#button-form-user-modification {
-    text-align: end;
+
+.profile {
+    width: 100%;
+    padding: 5%;
 }
-.profileContent {
-    margin-left: 1rem;
-}
-#row-profil {
+
+.profile__form {
     margin-top: 3rem;
 }
 
-@media only screen and (min-width: 768px) {
+.profile__save-button {
+    text-align: end;
+}
 
-    .profileContent {
-        /*margin-left: 5rem;*/
-        /*margin-right: 10rem;*/
-        /*margin-top: 8rem;*/
-        width: 100%;
+.profile__title {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .profile__save-button {
+        text-align: center;
     }
-
-    .saveButton {
-        text-align: right;
-    }
-
 }
