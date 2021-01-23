@@ -1,3 +1,7 @@
+.left-sidebar {
+    display: flex;
+    flex-direction: row;
+}
 
 .side-nav, .sidenav {
     background-color: var(--grey-background);

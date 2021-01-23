@@ -1,0 +1,15 @@
+.user-management {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .user-management {
+        margin-left: 4rem;
+        margin-right: 5rem;
+    }
+
+}
+

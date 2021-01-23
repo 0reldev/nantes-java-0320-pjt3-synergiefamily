@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="user-management-body">
+<body class="left-sidebar">
 <header th:replace="nav.html :: nav-bar"></header>
 <div class="block-filter">
     <form action="/filter" method="post" th:object="${activityLeader}">
@@ -19,7 +19,7 @@
             <div class="bloc-form-filter" id="bloc-form-filter">
                 <div class="card white" id="card-white">
                     <div class="card-action black-text" id="card-action">
-                        <h4 class="center-align">Recherches</h4>
+                        <h2 class="center-align">Recherche</h2>
                     </div>
                     <div class="card-content">
                         <div class="bloc1">

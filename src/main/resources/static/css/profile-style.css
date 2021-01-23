@@ -1,4 +1,3 @@
-
 .profile {
     width: 100%;
     padding: 5%;
@@ -10,10 +9,6 @@
 
 .profile__save-button {
     text-align: end;
-}
-
-.profile__title {
-    text-align: center;
 }
 
 @media (max-width: 768px) {

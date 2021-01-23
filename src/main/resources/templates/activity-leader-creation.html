@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="user-management-body">
+<body class="left-sidebar">
 <script type="text/javascript">
     function removeUnavailability(id) {
         document.getElementById(id).remove();
@@ -28,7 +28,7 @@
             <div class="row" id="row-form">
                 <div class="card white">
                     <div class="card-action black-text" id="card-action">
-                        <h4 class="title-center">Information animateur</h4>
+                        <h2 class="title-center">Information animateur</h2>
                         <div class="name">
                             <div class="firstname">
                                 <input th:field="*{firstName}" required id="firstname"type="text" class="validate" placeholder="Prénom*" th:disabled="${!editable}">

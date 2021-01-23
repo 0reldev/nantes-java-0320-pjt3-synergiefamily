@@ -1,0 +1,19 @@
+.user-animator-ligne,
+.adding-buttons-line {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 4rem;
+}
+
+.data-table, .striped {
+    margin-top: 2rem;
+}
+
+@media (max-width: 460px) {
+
+    .data-table {
+        font-size: 10px;
+    }
+
+}

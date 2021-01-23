@@ -9,30 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="user-management-body">
-<header th:replace="nav.html :: nav-bar"></header>
-    <main class="userManagementPageContent">
-        <h2>Gestion des utilisateurs</h2>
-        <div class="user-animator-ligne">
-            <a class="waves-effect waves-light btn black-text white darken-1" th:href="@{/user-creation}">
-                <i class="material-icons left">add</i>AJOUTER UN UTILISATEUR</a>
-        </div>
-        <table class="striped">
-            <thead>
-                <tr>
-                    <th>Email</th>
-                    <th>Rôle</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr th:each="user : ${users}">
-                    <td th:text="${user.email}">test1@exemple.com</td>
-                    <td>
-                        <span th:each="role : ${user.roles}" th:text="${role.nameForDisplay}">ROLE</span>
-                    </td>
-                    <td>
-                        <p>
+<body class="left-sidebar">
+    <header th:replace="nav.html :: nav-bar"></header>
+    <main class="user-management">
+        <div class="container">
+            <h2>Gestion des utilisateurs</h2>
+            <div class="adding-buttons-line">
+                <a class="waves-effect waves-light btn darken-1" th:href="@{/user-creation}">
+                    <i class="material-icons left">add</i>AJOUTER UN UTILISATEUR</a>
+            </div>
+            <table class="data-table striped">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Rôle</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="user : ${users}">
+                        <td th:text="${user.email}">test1@exemple.com</td>
+                        <td>
+                            <span th:each="role : ${user.roles}" th:text="${role.nameForDisplay}">ROLE</span>
+                        </td>
+                        <td>
                             <a class="subheader" th:href="@{/user-edition(id=${user.id})}">
                                 <i class="small material-icons">
                                         edit
@@ -43,11 +43,11 @@
                                         delete
                                 </i>
                             </a>
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
