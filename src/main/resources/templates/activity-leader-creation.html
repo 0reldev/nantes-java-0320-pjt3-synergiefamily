@@ -104,14 +104,10 @@
                         <p>Indisponibilités&nbsp;: sélectionnez une période durant laquelle vous n'êtes pas disponible, puis cliquez sur ENREGISTRER pour qu'elle soit prise en compte.</p>
                         <div class="row">
                             <div class="input-field col s12 m6">
-<!--                                <label>Ajouter une nouvelle indisponibilité</label>-->
-<!--                                <div class="unavailabilityStart">-->
                                     <label title="Clique-ici">Date de début d'indisponibilité</label>
                                     <input type="text" class="datepicker" name="unavailabilityStart" th:disabled="${!editable}">
-<!--                                </div>-->
                             </div>
                             <div class="input-field col s12 m6">
-<!--                            <div class="unavailabilityEnd">-->
                                 <label title="Clique-ici">Date de fin d'indisponibilité</label>
                                 <input type="text" class="datepicker" name="unavailabilityEnd" th:disabled="${!editable}">
                             </div>
@@ -210,7 +206,7 @@
                 autoClose: true,
                 today: 'Today',
                 clear: 'Réinitialiser',
-                close: 'Close',
+                close: 'Fermer',
                 firstDay: true,
                 selectMonths: true,
                 yearRange: [1950,2020],
