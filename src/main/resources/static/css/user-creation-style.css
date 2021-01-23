@@ -1,0 +1,33 @@
+.user-creation,
+.user-edition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3rem auto 2rem;
+    height: 100vh;
+}
+
+.user-creation__card,
+.user-edition__card {
+    min-width: 28rem;
+    padding: 2rem;
+}
+
+.user-creation__email,
+.user-edition__email {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .user-creation,
+    .user-edition {
+        width: 100%;
+    }
+
+    .user-creation__card,
+    .user-edition__card{
+        min-width: 20rem;
+    }
+}

@@ -1,3 +1,20 @@
 .btn i {
     color: white;
 }
+
+.btn {
+
+    margin: 1rem;
+}
+
+/*#buttonSave {*/
+/*    display: flex;*/
+/*    margin-top: 3rem;*/
+/*    text-align: center;*/
+/*}*/
+
+/*#button-form-user-creation {*/
+/*    text-align: center;*/
+/*    margin-top: 3rem;*/
+/*    margin-bottom: 2rem;*/
+/*}*/

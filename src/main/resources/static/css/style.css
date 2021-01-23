@@ -9,40 +9,9 @@
 @import "nav-style.css";
 @import "profile-style.css";
 @import "user-management-style.css";
+@import "user-creation-style.css";
 @import "filter-style.css";
 
-
-/*PAGE FORMULAIRE CREATION UTILISATEUR*/
-
-#buttonSave {
-    display: flex;
-    margin-top: 3rem;
-    text-align: center;
-}
-
-.bloc-user-creation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bloc-user-creation h4 {
-    margin-top: 2rem;
-}
-.bloc-user-creation form {
-    padding-bottom: 0rem;
-}
-#bloc-form-user-creation {
-    margin-right: 1rem;
-}
-
-#button-form-user-creation {
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-#input-user-creation {
-    margin-bottom: 1rem;
-}
 
 /* ACTIVITY LEADER PAGE */
 .userManagementPageContent {
@@ -170,35 +139,6 @@ a i {
 
 
 
-    /*PAGE FORMULAIRE CREATION UTILISATEUR*/
-    #buttonSave {
-        display: flex;
-        margin-top: 3rem;
-        text-align: center;
-    }
-
-    .bloc-user-creation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    #bloc-form-user-creation {
-        width: 35rem;
-        margin-left: 22rem;
-    }
-
-    #button-form-user-creation {
-        text-align: center;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-    }
-    #input-user-creation {
-        margin-bottom: 1rem;
-    }
-    .userManagementPageContent {
-        overflow: auto;
-    }
 
 
     /*PAGE ANIMATEUR 4*/
