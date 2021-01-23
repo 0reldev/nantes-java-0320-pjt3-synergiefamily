@@ -10,53 +10,14 @@
 @import "profile-style.css";
 @import "user-management-style.css";
 @import "user-creation-style.css";
+@import "activity-leader-management-style.css";
 @import "filter-style.css";
 
-
-/* ACTIVITY LEADER PAGE */
-.userManagementPageContent {
-    overflow: scroll;
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 80%;
+    }
 }
-a i {
-    color: black;
-}
-#search-wrapper-animator {
-    width: 15rem;
-    display: flex;
-    margin-top: 1rem;
-}
-#search-user-animator {
-    width: 1rem;
-    margin-top: 1.1rem;
-}
-.user-animator-ligne {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 3rem;
-}
-#send-email-animator {
-    margin-top: 1rem;
-    width: 15rem;
-}
-#ajout-animateur {
-    width: 15rem;
-    padding-left: 0.5rem;
-    padding-right: 0rem;
-}
-#ajout-animateur i {
-    margin-right: 0;
-}
-
-.pagination {
-    display: flex;
-    justify-content: flex-end;
-}
-.searchButton {
-    border: none;
-    background-color: transparent;
-}
-
 
 /* ACTIVITY LEADER FORM PAGE */
 .title-center {
@@ -136,35 +97,6 @@ a i {
 
 
 @media only screen and (min-width: 768px) {
-
-
-
-
-
-    /*PAGE ANIMATEUR 4*/
-    a i {
-        color: black;
-    }
-    #search-wrapper-animator {
-        width: 20rem;
-        display: flex;
-    }
-    #search-user-animator {
-        width: 1rem;
-        margin-top: 1.1rem;
-    }
-
-    #ajout-animateur {
-        margin-right: 3rem;
-    }
-    .searchButton {
-        border: none;
-        background-color: transparent;
-    }
-    #send-email-animator {
-        margin-top: 3rem;
-    }
-
     /*PAGE FORMULAIRE CREATION ANIMATEUR*/
     .title-center {
         text-align: center;
@@ -379,6 +311,7 @@ a i {
         flex-direction: row;
         justify-content: flex-start;
     }
+
     .selectemail p {
         margin-right: 1rem;
     }

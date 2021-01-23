@@ -1,6 +1,7 @@
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 h5 {
@@ -10,6 +11,6 @@ h5 {
 
 @media only screen and (min-width: 992px) {
     h2 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }

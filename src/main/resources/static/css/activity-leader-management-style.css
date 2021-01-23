@@ -1,0 +1,17 @@
+
+.activity-leader-management {
+    width: 100%;
+}
+
+.activity-leader__send-button {
+    margin-top: 1rem;
+    width: 15rem;
+}
+
+
+@media (max-width: 420px) {
+    .activity-leader-management h2 {
+        max-width: 280px;
+    }
+
+}
