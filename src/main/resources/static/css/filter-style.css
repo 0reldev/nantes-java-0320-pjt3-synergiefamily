@@ -32,6 +32,7 @@
 .selection-tick {
     display: flex;
     justify-content: center;
+    padding: 1em !important;
 }
 
 @media only screen and (min-width: 768px) {
