@@ -25,7 +25,7 @@ public class ActivityLeader {
     @NotNull
     @Column(nullable = false)
     private String lastName;
-
+//ddede
     @NotNull
     @Column(nullable = false)
     private String firstName;

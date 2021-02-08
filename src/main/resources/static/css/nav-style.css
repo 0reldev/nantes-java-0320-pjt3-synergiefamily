@@ -23,10 +23,12 @@
     }
 }
 .navbar__company-logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     width: 8rem;
     height: 6rem;
-    margin-left: 0.5rem;
 }
 .navbar ul {
     margin-top: 0;
