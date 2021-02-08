@@ -90,8 +90,10 @@ public class FilterController {
             audiencesIds = null;
         }
 
-        List<ActivityLeader> list = activityLeaderRepository.findAllActiveByFilter(activityLeader.getFirstName(),
+        List<ActivityLeader> list = activityLeaderRepository.findAllActiveByFilter(
+                activityLeader.getFirstName(),
                 activityLeader.getLastName(),
+                activityLeader.getBirthdate(),
                 activityLeader.getEmail(),
                 activityLeader.getPhone(),
                 activityLeader.getLocation().getAddress1(),

@@ -42,6 +42,7 @@ public interface ActivityLeaderRepository extends JpaRepository<ActivityLeader, 
             " ON activity_leader.location_id = location.id" +
             " WHERE (firstName IS NULL OR (:firstName = '') OR firstName LIKE %:firstName%)" +
             " AND (lastName IS NULL OR (:lastName = '') OR lastName LIKE %:lastName%)" +
+            " AND ((:birthdate IS NULL) OR (birthdate= :birthdate))" +
             " AND (email IS NULL OR (:email='') OR email LIKE %:email%)" +
             " AND (phone IS NULL OR (:phone='') OR phone LIKE %:phone%)" +
             " AND (location.address1 IS NULL OR (:address1='') OR location.address1 LIKE %:address1%)" +
@@ -60,6 +61,7 @@ public interface ActivityLeaderRepository extends JpaRepository<ActivityLeader, 
     public List<ActivityLeader> findAllActiveByFilter(
             @Param("firstName") String firstName,
             @Param("lastName") String lastName,
+            @Param("birthdate") Date birthdate,
             @Param("email") String email,
             @Param("phone") String phone,
             @Param("address1") String address1,
